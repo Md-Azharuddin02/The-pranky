@@ -1,0 +1,36 @@
+
+body{
+    background-color:  rgb(255, 251, 238);
+    color: #ff4400;
+}
+.container{
+    width: 60%;
+    padding: 10px;
+    /* margin-top: 100px; */
+    margin: 100px auto 10px;
+    /* margin: 20px ; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(238, 255, 0, 0.178);
+    box-shadow: 10px 10px 3px rgb(214, 205, 255);
+}
+.profile{
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
+}
+.image img{
+    width: 160px; 
+    margin: 20px auto;
+    border: 1px solid black;
+
+}
+.form {
+    width: 75%;
+    padding: 30px 10px;
+    margin: 10px auto;
+}
+span, label{
+    font-size: larger;
+    color: #ff4400;
+}
