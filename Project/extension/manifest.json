@@ -1,0 +1,14 @@
+{
+    "name":"Jokes",
+    "description":"This extension is related to jokes",
+    "version":"0.0.1",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon": "./images/logo.png"
+    },
+    "icons":{
+      "128": "./images/128.png"
+    },
+    "permissions": ["activeTab"]
+}

@@ -1,0 +1,612 @@
+/* font-family: 'Baloo Bhai 2', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+  }
+  
+
+body{
+    font-family: 'Baloo Bhai 2', cursive; 
+    background-color: rgb(255, 251, 238);
+}
+
+  /* Navbar Css Start */
+
+ .nav-container a{
+    text-decoration: none;
+    /* color: #ffbf00; */
+    color: #ffb100;
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav-container a:hover{
+    /* color: rgb(255, 136, 0); */
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+#navbar{
+    background-color: rgba(238, 255, 0, 0.178);
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 18px 0 rgb(54 37 0 / 80%);
+    /* position: fixed; */
+    /* width: 100%; */
+}
+
+#navbar .nav-container{
+    display:flex;
+    padding: 5px;
+}
+
+.header .nav-container ul{
+    list-style: none;
+    display: flex;
+}
+
+.header .nav-container ul li{
+    padding: 10px;
+}
+
+.header .nav-container .nav-logo img{
+    width: 200px;
+    top:0px;
+    position: absolute;
+    left: 100px;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-weight: 0;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #ffb100;
+    padding: 4px 0px;
+    background-color: inherit;
+    font-family: 'Fredoka', sans-serif;  
+    margin: 0; 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    /* background-color: rgb(255, 115, 0); */
+    color: rgb(255, 115, 0);
+    text-decoration:underline;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgba(255, 255, 255, 0.61);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+    /* Navbaar Css End  */
+
+    /* Banner Css */
+
+#banner{
+    width: 100%;
+    background-color:  rgba(238, 255, 0, 0.178);
+}
+
+/* #banner .banner-container{
+
+} */
+
+.banner-container .image{
+    display: flex;
+}
+.banner-container .image .img1{
+    transform: translate(-20px, 70px);
+    position: relative;
+    left: 10px;
+}
+.banner-container .image .img2{
+    transform: translate(90px, 20px); 
+}
+.banner-container .image .img3{
+    transform: translate(150px, 25px);
+}
+.banner-container .image .img4{
+    position: relative;
+    right: -250px;
+    transform: translate(45px, 118px);
+}
+
+.banner-container .heading{
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.banner-container .heading h1{
+    font-weight: bolder;
+    color: #da6500;
+    font-size: 45px;
+}
+.banner-container .heading h1 .span2{
+    color: #447eff;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.banner-container .heading img{
+    width: 50px;
+    padding: 10px;
+}
+
+  /* Banner Css End  */
+
+  /* Post Your Own Jokes Section Start */
+  .post-joke{
+      border: 1px solid black;
+      border-radius: 50px;
+      margin: 10px ;
+      padding: 7px;
+      background-color: rgba(238, 255, 0, 0.178);
+      display: flex;
+  }
+  .post-joke .img{
+    margin: auto;
+    width: 7%;
+  }
+  .post-joke .img img{
+      width: 70px;
+  }
+  .post-joke .btn{
+      width: 12%;
+      margin: auto;
+  }
+  .post-joke .btn #btn-post{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
+    color: black;
+    background-color: #ffb100;
+    align-items: center;
+}
+
+.post-joke .btn #btn-post:hover{
+    background-color: rgb(247, 236, 202) ;
+    cursor: pointer;
+}
+
+/* Post Your Own Jokes Section End */
+
+   /* Joke Section Css  */
+
+#joke-section{
+    margin: 50px 100px;
+    padding: 10px;
+    /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); */ 
+}
+
+#joke-section .head-text{
+   margin: auto;
+   /* width: 12%; */
+   text-align: center;
+   padding: 20px;
+}
+#joke-section .head-text h1{
+    color:#0000FF;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#joke-section .grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem; 
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+    /* gap: 7rem 3rem;  */
+}
+
+#joke-section .joke-section{
+position: relative;
+width: 200px;
+height: 150px;
+border-radius: 10px;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+transition: 0.5s;
+padding: 10px 50px;
+margin: 10px 5px;
+background-color: #fff;
+cursor: pointer;
+}
+
+#joke-section .joke-section:hover{
+    height: 250px;
+
+}
+
+.joke-section .imgbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    border-radius: 10px;
+}
+.joke-section .content h2{
+    color: blue;
+    font-weight: bold;
+    font-size: 30px
+}
+.joke-section .content p{
+    font-weight: bold;
+}
+.joke-section .imgbox img{
+    width: 60%;
+    z-index: 99;
+    /* box-shadow: 0 2px 18px 0 rgb(54 37 0 / 80%); */
+}
+
+.joke-section .content{
+    position: absolute;
+    bottom: 0px;
+    margin: 10px -10px;
+    width: 70%;
+    padding:  10px;
+    text-align: center;
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#joke-section .joke-section:hover > .content{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+   /* Joke Section Css End  */
+
+   /* Teams Member Section  */
+
+   .row.heading h2 {
+    color:#0000FF;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 95px;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 2px;
+}
+ul{
+  margin:10px 80px;
+  list-style:none;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+.heading.heading-icon {
+    display: block;
+}
+.padding-lg {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+     border:1px solid #999999; 
+	 text-align:center; 
+	 margin-bottom:28px; 
+	 padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: 0;
+}
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+	font-size:24px; 
+	font-weight:bold;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+	line-height:22px; 
+	font-weight:400;
+}
+.practice-area .inner img{
+	display:inline-block;
+}
+
+
+.our-webcoderskull .cnt-block{ 
+   float:left; 
+   width:80%; 
+   background:#fff; 
+   padding:30px 20px; 
+   text-align:center; 
+   border:2px solid #d5d5d5;
+   border-radius: 20px;
+   margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure{
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img{ 
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+}
+.our-webcoderskull .cnt-block h3{ 
+   color:#2a2a2a; 
+   font-size:20px; 
+   font-weight:500; 
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.our-webcoderskull .cnt-block h3 a{
+  text-decoration:none;
+	color:#2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 a:hover{
+	color:#ff9900;
+}
+.our-webcoderskull .cnt-block p{ 
+   color:#2a2a2a; 
+   font-size:13px; 
+   line-height:20px; 
+   font-weight:400;
+}
+.our-webcoderskull .cnt-block .follow-us{
+	margin:20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us a:hover{
+    color: #ff9900;
+}
+
+.our-webcoderskull .cnt-block .follow-us li{ 
+    display:inline-block; 
+	width:auto; 
+	margin:0 5px;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa{ 
+   font-size:24px; 
+   color:#767676;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
+   color:#ff9900;
+}
+
+    /* Teams Member Section End  */
+
+    /* Footer Section Start  */
+ #footer{
+    position: relative;
+    bottom: -300px;
+    width: 100%;
+    background-color: #fffcc0a1;
+    padding-bottom: 10px;
+}
+ #footer .footer-container{
+     display: flex;
+     padding: 10px;
+     margin: auto;
+     width: 40%;
+     font-family: 'Baloo Bhai 2', cursive;
+}
+
+.footer-container .footer-content{
+   padding: 20px 50px;
+ }
+ .footer-container .footer-content a{
+    text-decoration: none;
+    /* color: #ffbf00; */
+    color: #ffb100;
+    font-weight: 600;
+    font-size: 17px;
+ }
+ .footer-content a:hover{
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+    text-decoration:underline;
+ }
+
+     /* Footer End  */
+
+     /* Privacy Policy  */
+
+.privacy-policy{
+    background-color: rgba(238, 255, 0, 0.178);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 2.5rem rgb(10 10 10 / 15%);
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 100px;
+    color: black;
+  }
+  
+  .privacy-policy h1{
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .privacy-policy h2{
+    padding-top: 20px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .privacy-policy{
+      margin: auto;
+      
+    }
+  }
+
+  /* Term and Condition  */
+
+  .terms-condition{
+    /* background-color: whitesmoke; */
+    background-color: rgba(238, 255, 0, 0.178);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 2.5rem rgb(10 10 10 / 15%);
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 100px;
+    color: black;
+  }
+  
+  .terms-condition h1{
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .terms-condition h3{
+    padding-top: 20px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .terms-condition{
+      margin: auto;
+      
+    }
+  }
+
+    /* Term and Condition End */
+
+  /* Jokes Post Section Start */
+  .joke-form{
+    margin: auto;
+    padding: 40px 50px;
+    background-color:rgba(238, 255, 0, 0.178) ;
+    box-shadow: 0 0.5rem 2.5rem rgb(10 10 10 / 15%);
+    border-radius: 20px;
+    position: relative;
+    top: 150px;
+    width: 40%;
+  }
+
+  .joke-form .joke-heading{
+      padding: 20px;
+      text-align: center;
+      color:#ffb100 ;
+  }
+
+  .joke-form .joke-container{
+    padding: 10px 10px;
+  }
+
+  .joke-form .joke-container table{
+      margin: auto;
+      width: 85%;
+      padding: 10px 10px;
+  }
+
+  .joke-form .joke-container table tr{
+      padding: 10px 10px;
+  }
+
+  .joke-form .joke-container .input{
+      font-weight: 600;
+      padding: 10px 10px;
+  }
+
+  .joke-form .joke-container .input label{
+      padding: 10px;
+  }
+
+  .joke-form .joke-container .input input{
+      padding: 5px 10px;
+      border: 1px solid rgb(160, 157, 157);
+      border-radius: 3px;
+      text-align: center;
+  }
+
+  .joke-form .joke-container .input small{
+    font-size: xx-small;
+    padding: 0;
+    margin: 0;
+    color: red;
+  }
+
+  .joke-form .joke-container .input select{
+      font-weight: 500;
+    padding: 5px 24px;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 3px;
+  }
+
+  .joke-form .joke-container .input textarea{
+    padding: 5px;
+      border-radius: 3px;
+      border: 1px solid rgb(160, 157, 157);
+  }
+
+  .joke-form .joke-container .btn{
+      margin: auto;
+      width: 12%;
+      padding: 10px 10px;
+  }
+
+  .joke-form .joke-container .btn .post-btn{
+    font-family: 'Fredoka', sans-serif;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffb100 ;
+    border-radius: 20px;
+    border: none;
+    width: 120%;
+  }
+
+  .joke-form .joke-container .btn .post-btn:hover{
+      cursor: pointer;
+      background-color: rgb(247, 236, 202);
+  }
+
+
+   /* Jokes Post Section End */
+  
